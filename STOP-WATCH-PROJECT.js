@@ -18,14 +18,20 @@ const stopTimer=()=>{
     clearInterval(intervalId)
 }
 
-
+ 
 document
 .querySelector(".stop-btn")
 .addEventListener("click", stopTimer);
 
-// document
-// .querySelector(".reset-btn")
-// .addEventListener("click", resetTimer);
+const resetTimer=()=>{
+    startCount=0;
+    countDownElement.innerText=startCount;
+    clearInterval(intervalId)
+}
+
+document
+.querySelector(".reset-btn")
+.addEventListener("click", resetTimer);
 // document
 // .querySelector(".stop-btn")
 // .addEventListener("click", stopTimer);
