@@ -1,0 +1,46 @@
+body {
+    background-color: #333; /* Dark color for body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.1); /* Box shadow for the content */
+    text-align: center;
+    height:200px;
+    width:150px;
+}
+
+.button {
+    margin-top: 1px;
+}
+
+.button button {
+    margin: 0 5px;
+}
+
+.resetValue {
+    margin-top: 20px;
+}
+
+#countDown {
+    font-size: 41px;
+    font-weight: bold;
+    color: green;
+}
+
+.resetValue p{
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button{
+    margin: -20px 0px 0px 0px;
+}
