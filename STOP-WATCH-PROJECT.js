@@ -5,21 +5,31 @@ const resetValueElement=document.querySelector(".resetValue")
 document
 .querySelector(".start-btn")
 .addEventListener("click", startTimer);
-document
-.querySelector(".reset-btn")
-.addEventListener("click", resetTimer);
-document
-.querySelector(".stop-btn")
-.addEventListener("click", stopTimer);
-document
-.querySelector(".stop-btn")
-.addEventListener("click", stopTimer);
 
-document
-.querySelector(".time-btn")
-.addEventListener("click", showStopValue);
+let startCount=0;
+
+const startTimer=()=>{
+    setInterval(()=>{
+        countDownElement.innerText=startCount++;
+    },1000)
+}
 
 
-document
-.querySelector(".clear-btn")
-.addEventListener("click", clearTimeValue)
+// document
+// .querySelector(".reset-btn")
+// .addEventListener("click", resetTimer);
+// document
+// .querySelector(".stop-btn")
+// .addEventListener("click", stopTimer);
+// document
+// .querySelector(".stop-btn")
+// .addEventListener("click", stopTimer);
+
+// document
+// .querySelector(".time-btn")
+// .addEventListener("click", showStopValue);
+
+
+// document
+// .querySelector(".clear-btn")
+// .addEventListener("click", clearTimeValue)
